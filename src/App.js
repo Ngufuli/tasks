@@ -18,10 +18,14 @@ function App() {
     }
 ])
 
+const deleteTask = (id) => {
+  setTask(task.filter((task)=> task.id !== id))
+}
+
   return (
     <div className="container">
       <Header />     
-      <Tasks task={task}/> 
+      {task.length > 0 ? <Tasks task={task} onDelete={deleteTask}/> : 'No tasks available'}
     </div>
   );
 }
