@@ -1,10 +1,10 @@
 import Task from "./Task";
 
-const Tasks = ({task, onDelete}) => {
+const Tasks = ({task, onDelete, onToggle}) => {
 
     return(
         <>
-        {task.map((tas) => (<Task key={tas.id} tas={tas} onDelete={onDelete}/>))}
+        {task.map((tas) => (<Task key={tas.id} tas={tas} onDelete={onDelete} onToggle={onToggle} />))}
         </>
     )
 }
