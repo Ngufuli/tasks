@@ -11,12 +11,6 @@
       "day": "Monday 5th October",
       "reminder": true,
       "id": 5
-    },
-    {
-      "text": "IT",
-      "day": "Tuesday",
-      "reminder": false,
-      "id": 6
     }
   ]
 }
